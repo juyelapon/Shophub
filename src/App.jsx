@@ -11,10 +11,10 @@ const App = () => {
     <>
     <Header/>
     <Hero/>
-    {/* <Second/>
+    <Second/>
     <Card/>
     <Deals/>
-    <Footer/> */}
+    <Footer/>
     </>
   )
 }

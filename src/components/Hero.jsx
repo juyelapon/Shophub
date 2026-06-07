@@ -2,7 +2,7 @@ import React from 'react'
 import BackgroundImage from "../assets/images/ecommerce.png"
 const Hero = () => {
     return (
-        <section class="bg-linear-to-r from-[#2563EB] to-[#1E40AF] py-22.5 mt-20">
+        <section class="bg-linear-to-r from-[#2563EB] to-[#1E40AF] py-22.5 mt-0">
             <div className="container">
                 <div className='flex gap-y-5 flex-col md:flex-row justify-between items-center'>
                     <div>
