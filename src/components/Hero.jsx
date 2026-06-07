@@ -1,23 +1,17 @@
 import React from 'react'
-
+import BackgroundImage from "../assets/images/ecommerce.png"
 const Hero = () => {
     return (
-        <section class="hero">
+        <section class="bg-linear-to-r from-[#2563EB] to-[#1E40AF] py-22.5 mt-20">
             <div className="container">
-                <h1 className='font-bold text-[#FFFFFF] text-6xl leading-15 font-inter pt-35 pb-3'> Summer Sale</h1>
-                <h5 className='font-normal text-xl text-[#DBEAFE] font-inter leading-6.5 pb-8'> Up to 70% off on selected items. Limited time offer!</h5>
-                <button className='rounded-lg bg-[#FFFFFF] w-[143.05] h-[48] pl-8 pt-2 pb-2.5 pr-7 text-[#2563EB] font-bold font-inter text-base'> Shop Now</button>
-
-                <div class="relative w-148 -mt-18">
-
-                                <img
-                                    src="public/hero.png"
-                                    alt="hero"
-                                    class="w-148 h-80 absolute left-162 top-1/2 -translate-y-1/2"
-                                />
-
-
-                            </div>
+                <div className='flex gap-y-5 flex-col md:flex-row justify-between items-center'>
+                    <div>
+                        <h1 className='font-inter font-bold text-4xl w-xs  md:text-[60px] leading-15 text-[#FFFFFF]'>Summer Sale</h1>
+                        <p className='font-inter font-normal leading-7 text-base md:text-[20px] text-[#DBEAFE] mt-3'>Up to 70% off on selected items. Limited time offer!</p>
+                        <button className='font-bold font-inter text-[16px] bg-[#FFFFFF] text-[#2563EB] px-3 py-2 md:py-3.5 md:pl-8 md:pr-6.5 rounded-lg mt-8'>Shop Now</button>
+                    </div>
+                    <div> <img src={BackgroundImage} className='' alt="" /></div>
+                </div>
             </div>
         </section>
     )

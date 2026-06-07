@@ -1,4 +1,8 @@
 import React from 'react'
+import { GrMenu } from "react-icons/gr";
+import { IoSearchSharp } from "react-icons/io5";
+import { FaUser } from "react-icons/fa6";
+import { IoCart } from "react-icons/io5";
 
 const Header = () => {
     return (
@@ -8,60 +12,38 @@ const Header = () => {
                     <div className="container">
                         <div className='flex items-center mt-5 mb-3'>
                             <img src="public/navlogo.png" alt="" />
-                            <ul className='flex ml-8 gap-8'>
+                            <ul className='hidden md:flex ml-8 gap-8'>
                                 <li className='li'> Home</li>
                                 <li className='li'> Categories</li>
                                 <li className='li'> Deals</li>
                                 <li className='li'> About</li>
                             </ul>
-                            <div class="relative w-75">
+                            <div className='relative w-lg ml-20.25'>
 
-                                <img
-                                    src="./search.png"
-                                    alt="search"
-                                    class="w-4 absolute left-23.25 top-1/2 -translate-y-1/2"
-                                />
-
-                                <input placeholder='search porducts...' className='w-lg h-10.5 border border-[#E5E7EB] rounded-lg ml-20.25 pl-10  placeholder: text-[#ADAEBC] font-inter font-normal' type='text' />
-
-                            </div>
-
-                            <div class="relative w-75">
-
-                                <img
-                                    src="public/store.png"
-                                    alt="store"
-                                    class="w-4 absolute left-100 top-1/2 -translate-y-1/2"
-                                />
+                                <IoSearchSharp size={16} className=' absolute -left-40 top-11 md:absolute md:top2/4 md:translate-y-[-325%] md:left-4 md:block' color='#E5E7EB' />
+                                <input placeholder='search porducts...' className='absolute -right-10 top-7 w-full md:block md:outline-none md:w-lg md:absolute md:right-0 md:-top-5.5 h-10.5 border border-[#E5E7EB] rounded-lg  pl-10  placeholder: text-[#ADAEBC] font-inter font-normal ' type='text' />
 
 
                             </div>
+                            <div className='ml-auto flex gap-6'>
+                                <button>
+                                    <IoCart />
+                                </button>
 
-                            <div class="relative w-75">
+                                <div>
+                                    <button>
+                                        <FaUser />
 
-                                <img
-                                    src="public/user.png"
-                                    alt="user"
-                                    class="w-4 absolute left-64 top-1/2 -translate-y-1/2"
-                                />
-
-
+                                    </button>
+                                </div>
                             </div>
-                            <div class="relative w-75 -top-4">
 
-                                <img
-                                    src="public/red.png"
-                                    alt="red"
-                                    class="w-4 absolute left-12 top-1/2 -translate-y-1/2"
-                                />
-
-
-                            </div>
 
                         </div>
+
                     </div>
                 </nav>
-                
+
             </header>
         </>
     )

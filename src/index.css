@@ -3,15 +3,11 @@
   --font-inter: "Inter", sans-serif;
 }
 .container{
-  @apply max-w-320 mx-auto
+  @apply max-w-320 mx-auto px-2.5
 }
 
 .li{
   @apply text-[#374151] font-normal leading-6 text-base
-}
-
-.hero{
-  @apply bg-gradient-to-br from-[#2563EB] via-[#1D4ED8] to-[#1E3A8A] h-[500px] w-full
 }
 
 .first{
@@ -22,4 +18,8 @@
 }
 .third{
   @apply bg-gradient-to-br from-purple-500 to-indigo-500
+}
+
+.same{
+  @apply font-inter font-bold text-xl leading-7 text-[#FFFFFF] mb-4
 }
